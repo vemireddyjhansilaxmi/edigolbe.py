@@ -1,0 +1,142 @@
+/* Custom Styles for COVID-19 Dashboard */
+
+body {
+    background-color: #68abef; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8ab9f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(109, 163, 209, 0.1);
+}
+
+.dashboard-title {
+    color: #eff2f5;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #76b9db;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(104, 159, 236, 0.05);
+}
+
+.section-title {
+    color: #495057;
+    border-bottom: 2px solid #9ec8f5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.data-display {
+    background-color: #87adee;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.plot-image {
+    border: 1px solid #78b2ec;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.plot-image:hover {
+    transform: scale(1.05); 
+}
+
+.prediction-form {
+    background-color: #85b8f7;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+ .submit-btn {
+    background-color: #28a745;  /* Green matches hover */
+    border-color: #28a745;
+    color: rgb(246, 240, 219);
+}
+.submit-btn:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+
+.result-display {
+    background-color: #7dafed;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 15px;
+    }
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+    .data-display, .prediction-form, .result-display {
+        font-size: 12px;
+    }
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.data-display {
+    background: linear-gradient(145deg, #87adee, #ffffff);
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: 'Consolas', monospace;
+}
+.data-display pre {
+    margin: 0;
+    background: transparent;
+    font-size: 13px;
+}
+.plot-image {
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+.prediction-form {
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+}
+.plot-container {
+    margin-top: 15px;
+}
+.plot-container img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: contain;
+}
+}
